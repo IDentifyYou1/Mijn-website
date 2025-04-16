@@ -1,0 +1,142 @@
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d3d3d3;
+  padding-bottom: 80px; /* Geef ruimte voor de footer */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5c6c76;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.navbar .logo img {
+  height: 80px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Contactsectie */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 20px;
+}
+
+.contact-form {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #5c6c76;
+  color: black;
+  width: 100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+
+/* Map-afbeelding */
+.map-placeholder {
+  flex: 1 1 45%;
+  background-color: #5c6c76;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  min-height: 200px; /* Kleinere hoogte voor de mapcontainer */
+  width: 100%; /* Zorgt ervoor dat de map de volledige breedte van zijn container gebruikt */
+  overflow: hidden; /* Verbergt delen van de afbeelding die buiten de container vallen */
+}
+
+.map-placeholder img {
+  width: 100%; /* Zorg ervoor dat de afbeelding de volledige container vult */
+  height: 100%; /* De afbeelding past zich aan de containerhoogte aan */
+  object-fit: cover; /* Zorgt ervoor dat de afbeelding de container volledig vult zonder vervorming */
+}
+
+/* Footer */
+.contact-footer {
+  background-color: #5c6c76;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 20px; /* Verminderde hoogte voor een dunnere footer */
+  flex-wrap: wrap;
+  color: black;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0; /* Zorg ervoor dat de footer altijd onderaan staat */
+  width: 100%; /* Zorg ervoor dat de footer over de volle breedte is */
+  z-index: 10; /* Zorg ervoor dat de footer boven andere elementen ligt */
+}
+
+.contact-footer div {
+  min-width: 200px;
+  margin-bottom: 15px;
+}
+
+.contact-footer strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsief */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .map-placeholder {
+    flex: 1 1 100%;
+  }
+
+  .nav-links {
+    gap: 20px;
+    font-size: 16px;
+  }
+}
+
+span {
+  color: red;
+}

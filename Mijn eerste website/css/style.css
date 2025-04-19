@@ -254,3 +254,18 @@ body {
   margin: 0;
   color: #000;
 }
+
+
+/* verwijder */
+
+.projects-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exact 2 kolommen */
+  gap: 60px; /* niet te groot, anders past het misschien niet */
+  padding: 40px;
+  background-color: #a9a9a9;
+  justify-items: center; /* center de items horizontaal */
+  align-items: center;   /* center de items verticaal */
+  height: calc(50vh - 100px); /* maximaal de hoogte van je scherm minus navbar */
+  box-sizing: border-box;
+}

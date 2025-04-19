@@ -258,14 +258,66 @@ body {
 
 /* verwijder */
 
-.projects-container2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* exact 2 kolommen */
-  gap: 60px; /* niet te groot, anders past het misschien niet */
-  padding: 40px;
-  background-color: #a9a9a9;
-  justify-items: center; /* center de items horizontaal */
-  align-items: center;   /* center de items verticaal */
-  height: calc(50vh - 100px); /* maximaal de hoogte van je scherm minus navbar */
-  box-sizing: border-box;
+/* Algemene achtergrondkleur voor hele pagina */
+body {
+  background-color: #aeb0b2; /* Gelijk aan de grijze achtergrond die je wél wil */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Project Container */
+.project-container {
+  display: flex;
+  justify-content: center; /* Zorgt dat het mooi gecentreerd staat */
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-box {
+  background-color: #5c6c76;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* optioneel voor wat diepte */
+}
+
+/* Responsiveness */
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* Algemene stijl voor beide kolommen */
+.project-box {
+  width: 300px; /* zorg dat dit gelijk is aan die van de 6-foto blokken */
+  height: 300px;
+  background-color: #5c6d78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+/* Afbeelding vult het hele vak, zonder afsnijding */
+.project-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }

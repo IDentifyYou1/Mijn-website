@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projecten - Timo Eeckeleers</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projecten Overzicht</title>
 
+  <!-- Koppeling naar eigen stylesheet -->
+  <link rel="stylesheet" href="css/portofolio.css" />
+</head>
 <body>
 
+  <!-- Navigatie -->
   <header class="navbar">
     <div class="logo">
-      <img src="assets/images/Logo portofolio.PNG" alt="Timo Eeckeleers logo" />
+      <img src="assets/images/Logo portofolio.PNG" alt="Timo Eeckeleers logo">
     </div>
     <nav class="nav-links">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="project.html">Projects</a>
-      <a class="nav-link active" aria-current="page" href="#">Projects Info</a>
-      <a  class="nav-link" href="contact.html">Contact</a>
-    </nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" aria-current="page" href="#">Projects</a>
+        <a class="nav-link" href="project.html">Projects Info</a>
+        <a  class="nav-link" href="contact.html">Contact</a>
+      </nav>
   </header>
 
-  <main class="projects-container">
-    <div class="project">
-      <img src="assets/images/Mercedes.webp" alt="Project 1">
-      <p>G-Wagon Met Controller</p>
+  <!-- Projectoverzicht -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="project-card">
+          <!-- Link naar de detailpagina van het eerste project -->
+          <a href="Mercedes-Project.html">
+            <img src="assets/images/Mercedes.webp" alt="Project 1">
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+          <!-- Link naar de detailpagina van het tweede project -->
+          <a href="Kruispunt-Project.html">
+            <img src="assets/images/Kruispunt.webp" alt="Project 2">
+          </a>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+          <!-- Link naar de detailpagina van het derde project -->
+          <a href="Ventilator-Project.html">
+            <img src="assets/images/ventilator.webp" alt="Project 3">
+          </a>
+          
+        </div>
+      </div>
     </div>
-    <div class="project">
-      <img src="assets/images/Kruispunt.webp" alt="Project 2">
-      <p>Kruispunt Met Knoppen</p>
+    <div class="row">
+      <div class="col">
+        <div class="project-card">
+          <!-- Link naar de detailpagina van het vierde project -->
+          <a href="Spring-Project.html">
+            <img src="assets/images/Spring auto.webp" alt="Project 4">
+          </a>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+          <!-- Link naar de detailpagina van het vijfde project -->
+          <a href="Vliegtuig-Project.html">
+            <img src="assets/images/Vliegtuig.webp" alt="Project 5">
+          </a>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+          <!-- Link naar de detailpagina van het zesde project -->
+          <a href="Trein-Project.html">
+            <img src="assets/images/Trein.webp" alt="Project 6">
+          </a>
+          
+        </div>
+      </div>
     </div>
-    <div class="project">
-      <img src="assets/images/ventilator.webp" alt="Project 3">
-      <p>Ventilator Auto</p>
-    </div>
-    <div class="project">
-      <img src="assets/images/Spring auto.webp" alt="Project 4">
-      <p>Spring Auto</p>
-    </div>
-    <div class="project">
-      <img src="assets/images/Mercedes.webp" alt="Project 5">
-      <p>Project 5</p>
-    </div>
-    <div class="project">
-      <img src="assets/images/Mercedes.webp" alt="Project 6">
-      <p>Project 6</p>
-    </div>
-  </main>
+  </div>
+  
 
 </body>
-
 </html>

@@ -1,11 +1,15 @@
-/* Body */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #d3d3d3;
-  padding-bottom: 80px; /* Geef ruimte voor de footer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Navbar */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+
 .navbar {
   background-color: #5c6c76;
   height: 100px;
@@ -16,7 +20,7 @@ body {
 }
 
 .navbar .logo img {
-  height: 80px;
+  height: 80px; 
 }
 
 .nav-links {
@@ -29,13 +33,13 @@ body {
   font-weight: bold;
   text-decoration: none;
   font-size: 18px;
+  padding: 10px;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
 
-/* Contactsectie */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -65,40 +69,40 @@ body {
   color: black;
 }
 
-/* Map-afbeelding */
+
 .map-placeholder {
   flex: 1 1 45%;
-  background-color: #5c6c76;
+  background-color: #aeb0b2;
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
   font-weight: bold;
   font-size: 18px;
-  min-height: 200px; /* Kleinere hoogte voor de mapcontainer */
-  width: 100%; /* Zorgt ervoor dat de map de volledige breedte van zijn container gebruikt */
-  overflow: hidden; /* Verbergt delen van de afbeelding die buiten de container vallen */
+  min-height: 200px; 
+  width: 100%; 
+  overflow: hidden; 
 }
 
 .map-placeholder img {
-  width: 100%; /* Zorg ervoor dat de afbeelding de volledige container vult */
-  height: 100%; /* De afbeelding past zich aan de containerhoogte aan */
-  object-fit: cover; /* Zorgt ervoor dat de afbeelding de container volledig vult zonder vervorming */
+  width: 750px; 
+  height: 700px; 
+  object-fit: contain; 
 }
 
-/* Footer */
+
 .contact-footer {
   background-color: #5c6c76;
   display: flex;
   justify-content: space-around;
-  padding: 15px 20px; /* Verminderde hoogte voor een dunnere footer */
+  padding: 15px 20px; 
   flex-wrap: wrap;
   color: black;
   font-size: 16px;
   position: fixed;
-  bottom: 0; /* Zorg ervoor dat de footer altijd onderaan staat */
-  width: 100%; /* Zorg ervoor dat de footer over de volle breedte is */
-  z-index: 10; /* Zorg ervoor dat de footer boven andere elementen ligt */
+  bottom: 0; 
+  width: 100%; 
+  z-index: 10; 
 }
 
 .contact-footer div {
@@ -120,7 +124,7 @@ body {
   text-decoration: underline;
 }
 
-/* Responsief */
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -144,14 +148,14 @@ span {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* precies 3 kolommen */
-  grid-template-rows: repeat(2, 200px);  /* 2 rijen van 250px hoogte */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 200px);  
   gap: 40px;
   padding: 40px;
   background-color: #a9a9a9;
   justify-items: center;
   align-items: center;
-  height: calc(100vh - 100px); /* Past binnen scherm minus navbar */
+  height: calc(100vh - 100px); 
   box-sizing: border-box;
 }
 
@@ -191,41 +195,17 @@ html, body {
 }
 
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #aaa;
-}
-
-.navbar {
-  background-color: #5c6c76;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  height: 60px;
-}
-
-.nav-links a {
-  color: #000;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* exact 3 kolommen */
-  grid-template-rows: repeat(2, auto);  /* exact 2 rijen */
-  gap: 60px; /* niet te groot, anders past het misschien niet */
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, auto);  
+  gap: 60px; 
   padding: 40px;
   background-color: #a9a9a9;
-  justify-items: center; /* center de items horizontaal */
-  align-items: center;   /* center de items verticaal */
-  height: calc(100vh - 100px); /* maximaal de hoogte van je scherm minus navbar */
+  justify-items: center; 
+  align-items: center;   
+  height: calc(100vh - 100px); 
   box-sizing: border-box;
 }
 
@@ -256,20 +236,18 @@ body {
 }
 
 
-/* verwijder */
 
-/* Algemene achtergrondkleur voor hele pagina */
 body {
-  background-color: #aeb0b2; /* Gelijk aan de grijze achtergrond die je wél wil */
+  background-color: #aeb0b2; 
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Project Container */
+
 .project-container {
   display: flex;
-  justify-content: center; /* Zorgt dat het mooi gecentreerd staat */
+  justify-content: center; 
   align-items: flex-start;
   gap: 40px;
   padding: 60px;
@@ -288,10 +266,10 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* optioneel voor wat diepte */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
 }
 
-/* Responsiveness */
+
 .project-container {
   display: flex;
   justify-content: center;
@@ -300,9 +278,9 @@ body {
   margin-top: 50px;
 }
 
-/* Algemene stijl voor beide kolommen */
+
 .project-box {
-  width: 300px; /* zorg dat dit gelijk is aan die van de 6-foto blokken */
+  width: 300px; 
   height: 300px;
   background-color: #5c6d78;
   display: flex;
@@ -311,10 +289,10 @@ body {
   text-align: center;
   padding: 10px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-  border-radius: 8px;
+  border-radius: 0;
 }
 
-/* Afbeelding vult het hele vak, zonder afsnijding */
+
 .project-box img {
   width: 100%;
   height: 200px;

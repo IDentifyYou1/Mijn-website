@@ -40,79 +40,19 @@ body {
   text-decoration: underline;
 }
 
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px;
-  gap: 20px;
-}
 
-.contact-form {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  background-color: #5c6c76;
-  color: black;
-  width: 100%;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: black;
-}
-
-
-.map-placeholder {
-  flex: 1 1 45%;
-  background-color: #aeb0b2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  min-height: 200px; 
-  width: 100%; 
-  overflow: hidden; 
-}
-
-.map-placeholder img {
-  width: 750px; 
-  height: 700px; 
-  object-fit: contain; 
-}
 
 
 .contact-footer {
   background-color: #5c6c76;
-  display: flex;
-  justify-content: space-around;
-  padding: 15px 20px; 
-  flex-wrap: wrap;
-  color: black;
-  font-size: 16px;
-  position: fixed;
-  bottom: 0; 
-  width: 100%; 
-  z-index: 10; 
 }
 
 .contact-footer div {
   min-width: 200px;
-  margin-bottom: 15px;
 }
 
 .contact-footer strong {
   display: block;
-  margin-bottom: 5px;
 }
 
 .contact-footer a {
@@ -124,22 +64,6 @@ body {
   text-decoration: underline;
 }
 
-
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .contact-form,
-  .map-placeholder {
-    flex: 1 1 100%;
-  }
-
-  .nav-links {
-    gap: 20px;
-    font-size: 16px;
-  }
-}
 
 span {
   color: red;

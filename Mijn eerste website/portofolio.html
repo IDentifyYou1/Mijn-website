@@ -5,28 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projecten Overzicht</title>
 
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ <!-- JavaScript: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+   defer></script>
+
   <!-- Koppeling naar eigen stylesheet -->
   <link rel="stylesheet" href="css/portofolio.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Navigatie -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/images/Logo portofolio.PNG" alt="Timo Eeckeleers logo">
+   
+<!-- Navigatie -->
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand logo" href="#">
+        <img src="assets/images/Logo portofolio.PNG" alt="Timo Eeckeleers logo">
+      </a>
+
+      <!-- Hamburger knop voor mobiel -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Mercedes-Project.html">Project Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <nav class="nav-links">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" aria-current="page" href="#">Projects</a>
-        <a class="nav-link" href="project.html">Projects Info</a>
-        <a  class="nav-link" href="contact.html">Contact</a>
-      </nav>
-  </header>
+  </nav>
+</header>
+
 
   <!-- Projectoverzicht -->
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col col-sm-12">
         <div class="project-card">
           <!-- Link naar de detailpagina van het eerste project -->
           <a href="Mercedes-Project.html">
@@ -34,7 +72,7 @@
           </a>
         </div>
       </div>
-      <div class="col">
+      <div class="col col-sm-12">
         <div class="project-card">
           <!-- Link naar de detailpagina van het tweede project -->
           <a href="Kruispunt-Project.html">
@@ -43,7 +81,7 @@
           
         </div>
       </div>
-      <div class="col">
+      <div class="col col-sm-12">
         <div class="project-card">
           <!-- Link naar de detailpagina van het derde project -->
           <a href="Ventilator-Project.html">
@@ -54,7 +92,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col col-sm-12">
         <div class="project-card">
           <!-- Link naar de detailpagina van het vierde project -->
           <a href="Spring-Project.html">
@@ -63,7 +101,7 @@
           
         </div>
       </div>
-      <div class="col">
+      <div class="col col-sm-12">
         <div class="project-card">
           <!-- Link naar de detailpagina van het vijfde project -->
           <a href="Vliegtuig-Project.html">
@@ -72,7 +110,7 @@
           
         </div>
       </div>
-      <div class="col">
+      <div class="col col-sm-12">
         <div class="project-card">
           <!-- Link naar de detailpagina van het zesde project -->
           <a href="Trein-Project.html">

@@ -25,6 +25,22 @@
     ></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script src="js/map-merksem.js" defer></script>
   </head>
 
   <body>
@@ -76,47 +92,65 @@
       </nav>
     </header>
 
-<div class="row">
-      <form class="contact-form col-md-6 p-4 needs-validation" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
-      <div class="mb-3">
-        <label for="naam" class="form-label">Naam <span>*</span></label>
-        <input name="Naam" type="text" id="naam" class="form-control" required />
-      </div>
+    <div class="row">
+      <form
+        class="contact-form col-md-6 p-4 needs-validation"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        novalidate
+      >
+        <div class="mb-3">
+          <label for="naam" class="form-label">Naam <span>*</span></label>
+          <input
+            name="Naam"
+            type="text"
+            id="naam"
+            class="form-control"
+            required
+          />
+        </div>
 
-      <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input name="email" type="email" id="email" class="form-control" />
-      </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input name="email" type="email" id="email" class="form-control" />
+        </div>
 
-      <div class="mb-3">
-        <label for="telefoon" class="form-label"
-          >Telefoonnummer <span>*</span></label
-        >
-        <input name="Telefoonnummer" type="tel" id="telefoon" class="form-control" required />
-      </div>
+        <div class="mb-3">
+          <label for="telefoon" class="form-label"
+            >Telefoonnummer <span>*</span></label
+          >
+          <input
+            name="Telefoonnummer"
+            type="tel"
+            id="telefoon"
+            class="form-control"
+            required
+          />
+        </div>
 
-      <div class="mb-3">
-        <label for="bericht" class="form-label">Bericht <span>*</span></label>
-        <textarea
-          name="bericht"
-          id="bericht"
-          class="form-control"
-          rows="5"
-          required
-        ></textarea>
-      </div>
-      <button class="btn btn-primary">verzenden</button>
-    </form>
+        <div class="mb-3">
+          <label for="bericht" class="form-label">Bericht <span>*</span></label>
+          <textarea
+            name="bericht"
+            id="bericht"
+            class="form-control"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button class="btn btn-primary">verzenden</button>
+      </form>
 
-    <!-- Vervang de map-placeholder door een afbeelding van Google Maps met de juiste stijl -->
-    <div class="map-placeholder col-md-6 p-4">
-      <img
-        src="assets/images/Map.png"
-        alt="Google Maps locatie"
-        class="map-image img-fluid"
-      />
+      <!-- Vervang de map-placeholder door een afbeelding van Google Maps met de juiste stijl -->
+     
+        <div class="col-md-6 p-4">
+          <div id="map-Distelhoek"></div>
+        </div>
+
     </div>
-</div>
+    
 
     <footer class="contact-footer row text-center">
       <div class="col-md-4">
@@ -130,10 +164,10 @@
       <div class="col-md-4">
         <strong>Adres</strong>
         <a
-          href="https://maps.google.com/?q=Noorderplaats+2,+2000+Antwerpen"
+          href="https://maps.app.goo.gl/8pGKzvk65nAvH3zL8"
           target="_blank"
         >
-          Noorderplaats 2,<br />2000 Antwerpen
+          Oortbroek 4,<br />2170 Antwerpen
         </a>
       </div>
     </footer>

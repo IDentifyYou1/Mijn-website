@@ -80,24 +80,25 @@
       <form class="contact-form col-md-6 p-4 needs-validation" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
       <div class="mb-3">
         <label for="naam" class="form-label">Naam <span>*</span></label>
-        <input type="text" id="naam" class="form-control" required />
+        <input name="text" type="text" id="naam" class="form-control" required />
       </div>
 
       <div class="mb-3">
         <label for="email" class="form-label">E-mail</label>
-        <input type="email" id="email" class="form-control" />
+        <input  name="email" type="email" id="email" class="form-control" />
       </div>
 
       <div class="mb-3">
         <label for="telefoon" class="form-label"
           >Telefoonnummer <span>*</span></label
         >
-        <input type="tel" id="telefoon" class="form-control" required />
+        <input  name="Telefoonnummer" type="tel" id="telefoon" class="form-control" required />
       </div>
 
       <div class="mb-3">
         <label for="bericht" class="form-label">Bericht <span>*</span></label>
         <textarea
+        name="bericht"
           id="bericht"
           class="form-control"
           rows="5"

@@ -76,32 +76,46 @@
       </nav>
     </header>
 
-    <section class="contact-container container">
-      <div class="row">
-        <form class="contact-form col-md-6">
-          <label for="naam">Naam <span>*</span></label>
-          <input type="text" id="naam" required />
-
-          <label for="email">E-mail</label>
-          <input type="email" id="email" />
-
-          <label for="telefoon">Telefoonnummer <span>*</span></label>
-          <input type="tel" id="telefoon" required />
-
-          <label for="bericht">Bericht <span>*</span></label>
-          <textarea id="bericht" rows="5" required></textarea>
-        </form>
-
-        <!-- Vervang de map-placeholder door een afbeelding van Google Maps met de juiste stijl -->
-        <div class="map-placeholder col-md-6">
-          <img
-            src="assets/images/Map.png"
-            alt="Google Maps locatie"
-            class="map-image img-fluid"
-          />
-        </div>
+<div class="row">
+      <form class="contact-form col-md-6 p-4" netlify>
+      <div class="mb-3">
+        <label for="naam" class="form-label">Naam <span>*</span></label>
+        <input type="text" id="naam" class="form-control" required />
       </div>
-    </section>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" id="email" class="form-control" />
+      </div>
+
+      <div class="mb-3">
+        <label for="telefoon" class="form-label"
+          >Telefoonnummer <span>*</span></label
+        >
+        <input type="tel" id="telefoon" class="form-control" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="bericht" class="form-label">Bericht <span>*</span></label>
+        <textarea
+          id="bericht"
+          class="form-control"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+      <button class="btn#5c6c76">verzenden</button>
+    </form>
+
+    <!-- Vervang de map-placeholder door een afbeelding van Google Maps met de juiste stijl -->
+    <div class="map-placeholder col-md-6 p-4">
+      <img
+        src="assets/images/Map.png"
+        alt="Google Maps locatie"
+        class="map-image img-fluid"
+      />
+    </div>
+</div>
 
     <footer class="contact-footer row text-center">
       <div class="col-md-4">

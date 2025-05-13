@@ -11,13 +11,12 @@ body {
 
 
 .navbar {
-  background-color: #5c6c76;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  min-height: 100px;
   padding: 0 40px;
+  background-color: #5c6c76;
+  align-items: center;
 }
+
 
 .navbar .logo img {
   height: 80px; 
@@ -65,9 +64,6 @@ body {
 }
 
 
-span {
-  color: red;
-}
 
 
 .projects-container {
@@ -225,3 +221,23 @@ body {
 }
 
 
+.object-fit-cover {
+  object-fit: cover;
+}
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}

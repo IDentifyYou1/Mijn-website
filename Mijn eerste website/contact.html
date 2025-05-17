@@ -11,37 +11,23 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <!-- Eigen CSS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/map.css" />
 
+    <!-- Leaflet CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
-
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
-
-    <script src="js/map-merksem.js" defer></script>
-    <script src="js/year.js" defer></script>
   </head>
 
   <body>
@@ -51,10 +37,7 @@
         <div class="container-fluid">
           <!-- Logo -->
           <a class="navbar-brand logo" href="#">
-            <img
-              src="assets/images/Logo portofolio.PNG"
-              alt="Timo Eeckeleers logo"
-            />
+            <img src="assets/images/Logo portofolio.PNG" alt="Timo Eeckeleers logo" />
           </a>
 
           <!-- Hamburger knop voor mobiel -->
@@ -109,6 +92,7 @@
             class="form-control"
             required
           />
+          <div class="invalid-feedback">Vul je naam in.</div>
         </div>
 
         <div class="mb-3">
@@ -117,9 +101,7 @@
         </div>
 
         <div class="mb-3">
-          <label for="telefoon" class="form-label"
-            >Telefoonnummer <span>*</span></label
-          >
+          <label for="telefoon" class="form-label">Telefoonnummer <span>*</span></label>
           <input
             name="Telefoonnummer"
             type="tel"
@@ -127,6 +109,7 @@
             class="form-control"
             required
           />
+          <div class="invalid-feedback">Vul je telefoonnummer in.</div>
         </div>
 
         <div class="mb-3">
@@ -138,23 +121,43 @@
             rows="5"
             required
           ></textarea>
+          <div class="invalid-feedback">Schrijf een bericht.</div>
         </div>
-        <button class="btn btn-primary">verzenden</button>
-      </form>
 
-      <!-- Vervang de map-placeholder door een afbeelding van Google Maps met de juiste stijl -->
+        <button class="btn btn-primary">Verzenden</button>
+      </form>
 
       <div class="col-md-6 p-4">
         <div id="map-Distelhoek"></div>
       </div>
     </div>
 
-    <footer
-      class="contact-footer container-fluid text-center h6 small p-4 mt-5"
-    >
+    <footer class="contact-footer container-fluid text-center h6 small p-4 mt-5">
       <div class="col-md-12"></div>
-      &copy; <span id="year"></span> Timo Eeckeleers - Student Internet Of
-      Things
+      &copy; <span id="year"></span> Timo Eeckeleers - Student Internet Of Things
     </footer>
+
+    <!-- Bootstrap JS Bundle met Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+
+    <!-- Eigen JS bestanden -->
+    <script src="js/map-merksem.js" defer></script>
+    <script src="js/year.js" defer></script>
+
+    <!-- Form validation script -->
+    <script src="js/contact.js" defer></script>
   </body>
 </html>

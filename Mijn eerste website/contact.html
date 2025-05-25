@@ -79,87 +79,89 @@
     </header>
 
     <main>
-      <div class="container">
-        <div class="row">
-          <form
-            class="contact-form col-md-6 p-4 needs-validation"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            novalidate
-          >
-            <div class="mb-3">
-              <label for="naam" class="form-label">Naam <span>*</span></label>
-              <input
-                name="Naam"
-                type="text"
-                id="naam"
-                class="form-control"
-                required
-              />
-              <div class="invalid-feedback">Vul je naam in.</div>
-            </div>
+      <main>
+        <div class="container">
+          <div class="row">
+            <form
+              class="contact-form col-md-6 p-4 needs-validation"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              novalidate
+            >
+              <section class="mb-3">
+                <label for="naam" class="form-label">Naam <span>*</span></label>
+                <input
+                  name="Naam"
+                  type="text"
+                  id="naam"
+                  class="form-control"
+                  required
+                />
+                <div class="invalid-feedback">Vul je naam in.</div>
+              </section>
 
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                class="form-control"
-                required
-              />
-              <div class="invalid-feedback">Vul je E-mail in</div>
-            </div>
+              <section class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+                <div class="invalid-feedback">Vul je E-mail in</div>
+              </section>
 
-            <div class="mb-3">
-              <label for="telefoon" class="form-label"
-                >Telefoonnummer <span>*</span></label
-              >
-              <input
-                name="Telefoonnummer"
-                type="tel"
-                id="telefoon"
-                class="form-control"
-                required
-              />
-              <div class="invalid-feedback">Vul je telefoonnummer in.</div>
-            </div>
+              <section class="mb-3">
+                <label for="telefoon" class="form-label"
+                  >Telefoonnummer <span>*</span></label
+                >
+                <input
+                  name="Telefoonnummer"
+                  type="tel"
+                  id="telefoon"
+                  class="form-control"
+                  required
+                />
+                <div class="invalid-feedback">Vul je telefoonnummer in.</div>
+              </section>
 
-            <div class="mb-3">
-              <label for="bericht" class="form-label"
-                >Bericht <span>*</span></label
-              >
-              <textarea
-                name="bericht"
-                id="bericht"
-                class="form-control"
-                rows="5"
-                required
-              ></textarea>
-              <div class="invalid-feedback">Schrijf een bericht.</div>
-            </div>
+              <section class="mb-3">
+                <label for="bericht" class="form-label"
+                  >Bericht <span>*</span></label
+                >
+                <textarea
+                  name="bericht"
+                  id="bericht"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Schrijf een bericht.</div>
+              </section>
 
-            <button class="btn btn-primary">Verzenden</button>
-          </form>
+              <button class="btn btn-primary">Verzenden</button>
+            </form>
 
-          <section class="col-md-6 p-4">
-            <article class="mb-6 p-5">
-              <h3><strong>Contact</strong></h3>
-            <p class="mb-1">Timo Eeckeleers</p>
-            <a href="mailto:Timo.Eeckeleers@student.ap.be" class="mb-1"
-              >Timo.Eeckeleers@student.ap.be</a>
-            <p class="mb-0">+32 123 45 67 89</p>
-            </article>
-            
-            <article class="mb-6">
-              <div id="map-Distelhoek"></div>
-            </article>
-          </section>
+            <section class="col-md-6 p-4">
+              <article class="mb-6 p-5">
+                <h3><strong>Contact</strong></h3>
+                <p class="mb-1">Timo Eeckeleers</p>
+                <a href="mailto:Timo.Eeckeleers@student.ap.be" class="mb-1"
+                  >Timo.Eeckeleers@student.ap.be</a
+                >
+                <p class="mb-0">+32 123 45 67 89</p>
+              </article>
+
+              <article class="mb-6">
+                <div id="map-Distelhoek"></div>
+              </article>
+            </section>
           </div>
         </div>
-      
+      </main>
     </main>
 
     <footer

@@ -4,7 +4,7 @@
   border-radius: 8px;
 }
 
-/* 📱 Mobiel: lagere hoogte */
+
 @media (max-width: 768px) {
   #map-Distelhoek {
     height: 400px;
